@@ -76,3 +76,20 @@ it('Проверяем решение задачи adjacentElementsProduct',  ()
 			56);
 	});
 });
+
+const exc6 = require('./allLongestStrings');
+
+
+it('Проверяем решение задачи allLongestStrings', () => {
+	it('Для массива ["aba", "aa", "ad", "vcd", "aba"] ответ ' +
+		'["aba", "vcd", "aba"]', () => {
+		assert.deepEqual(exc6.allLongestStrings(["aba", "aa", "ad", "vcd", "aba"]),
+			["aba", "vcd", "aba"]);
+	});
+	
+	it('Для массива ["a", "b", "c"] ответ ["a", "b", "c"]', () => {
+		assert.deepEqual(exc6.allLongestStrings(["a", "b", "c"]), 
+			["a", "b", "c"]);
+	});
+	
+});
