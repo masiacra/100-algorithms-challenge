@@ -39,3 +39,40 @@ it('Проверяем решение задачи addBorder',  () => {
 	});
 	
 });
+
+const exc4 = require('./addTwoDigits');
+
+it('Проверяем решение задачи addTwoDigits',  () => {
+	it('Для 29 ответ 11', () => {
+		assert.equal(exc4.addTwoDigits(29), 11);
+	});
+	
+	it('Для 34 ответ 7', () => {
+		assert.equal(exc4.addTwoDigits(34), 7);
+	});
+	
+	it('Для 99 ответ 18', () => {
+		assert.equal(exc4.addTwoDigits(99), 18);
+	});
+	
+});
+
+
+const exc5 = require('./adjacentElementsProduct');
+
+it('Проверяем решение задачи adjacentElementsProduct',  () => {
+	it('Для массива [3, 6, -2, -5, 7, 3] ответ 21', () => {
+		assert.equal(exc5.adjacentElementsProduct([3, 6, -2, -5, 7, 3]), 
+			21);
+	});
+	
+	it('Для массива [1, 2, 3, 5] ответ 15', () => {
+		assert.equal(exc5.adjacentElementsProduct([1, 2, 3, 5]), 
+			15);
+	});
+	
+	it('Для массива [3, -7, -8, 10] ответ 56', () => {
+		assert.equal(exc5.adjacentElementsProduct([3, -7, -8, 10]), 
+			56);
+	});
+});
