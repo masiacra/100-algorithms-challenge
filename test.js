@@ -31,5 +31,11 @@ it('Проверяем решение задачи add',  () => {
 	
 });
 
+const exc3 = require('./addBorder');
 
-
+it('Проверяем решение задачи addBorder',  () => {
+	it('Для ["abc","ded"] ответ ["*****","*abc*","*ded*","*****"]', () => {
+		assert.deepEqual(exc3.addBorder(["abc","ded"]), ["*****","*abc*","*ded*","*****"]);
+	});
+	
+});
