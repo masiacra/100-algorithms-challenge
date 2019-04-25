@@ -141,3 +141,15 @@ it("Проверяем решение задачи alphabetSubSequence", () => {
 		assert.equal(exc8.f("zab"), false);
 	}); 
 });
+
+
+const exc9 = require('./alphabeticShift');
+
+
+it("Проверяем решение задачи alphabeticShift", () => {
+	
+	it('Для строки "crazy" ответ "dsbaz"', () => {
+		assert.equal(exc9.f("crazy"), "dsbaz");
+	});
+	
+});
