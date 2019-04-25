@@ -93,3 +93,30 @@ it('Проверяем решение задачи allLongestStrings', () => {
 	});
 	
 });
+
+
+const exc7 = require('./almostIncreasingSequence');
+
+
+it('Проверяем решение задачи almostIncreasingSequence',  () => {
+	it('Для последовательности [1, 3, 2, 1] ответ false', () => {
+		assert.equal(exc7.f([1, 3, 2, 1]), false);
+	});
+	
+	it('Для последовательности [1, 3, 2] ответ true', () => {
+		assert.equal(exc7.f([1, 3, 2]), true);
+	});
+	
+	it('Для последовательност [5, 1, 2, 3] ответ true', () => {
+		assert.equal(exc7.f([5, 1, 2, 3]), true);
+	});
+	
+	it('Для последовательност [3, 7, 8, 1] ответ true', () => {
+		assert.equal(exc7.f([3, 7, 8, 1]), true);
+	});
+	
+	it('Для последовательност [3, 2, 8, 1] ответ false', () => {
+		assert.equal(exc7.f([3, 2, 8, 1]), false);
+	});
+	
+});
