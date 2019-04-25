@@ -153,3 +153,30 @@ it("Проверяем решение задачи alphabeticShift", () => {
 	});
 	
 });
+
+
+const exc10 = require('./alternatingSums');
+
+it('Проверяем решение задачи alternatingSum', () => {
+	it('Для массива [50, 60, 60, 45, 70] ответ [180, 105]', () => {
+		assert.deepEqual(exc10.f([50, 60, 60, 45, 70]), [180, 105]);
+	});
+});
+
+
+const exc11 = require('./areEquallyStrong');
+
+it('Проверяем решение задачи areEquallyStrong', () => {
+	it('Для входных параметров 10, 15, 10, 15 ответ true', () => {
+		assert.equal(exc11.f(10, 15, 10, 15), true);
+	});
+	it('Для входных параметров 15, 10, 10, 15 ответ true', () => {
+		assert.equal(exc11.f(15, 10, 10, 15), true);
+	});
+	it('Для входных параметров 15, 9, 15, 10 ответ false', () => {
+		assert.equal(exc11.f(15, 9, 15, 10), false);
+	});
+	it('Для входных параметров 15, 9, 10, 14 ответ false', () => {
+		assert.equal(exc11.f(15, 9, 10, 14), false);
+	});
+});
