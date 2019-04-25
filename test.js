@@ -120,3 +120,24 @@ it('Проверяем решение задачи almostIncreasingSequence',  (
 	});
 	
 });
+
+const exc8 = require('./alphabetSubSequence');
+
+
+it("Проверяем решение задачи alphabetSubSequence", () => {
+	it('Для "effg" ответ false', () => {
+		assert.equal(exc8.f("effg"), false);
+	}); 
+	it('Для "cdce" ответ false', () => {
+		assert.equal(exc8.f("cdce"), false);
+	}); 
+	it('Для "ace" ответ true', () => {
+		assert.equal(exc8.f("ace"), true);
+	}); 
+	it('Для "bxz" ответ true', () => {
+		assert.equal(exc8.f("bxz"), true);
+	}); 	
+	it('Для "zab" ответ false', () => {
+		assert.equal(exc8.f("zab"), false);
+	}); 
+});
