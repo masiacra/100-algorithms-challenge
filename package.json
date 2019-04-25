@@ -1,0 +1,19 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "100 algorithms challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masiacra/algorithms-challenge.git"
+  },
+  "author": "Igor Savelev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masiacra/algorithms-challenge/issues"
+  },
+  "homepage": "https://github.com/masiacra/algorithms-challenge#readme"
+}
