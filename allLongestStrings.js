@@ -30,12 +30,12 @@ function allLongestStrings(inputArray) {
 	let maxLen = 0;
 	for (let str of inputArray) {
 		if (str.length > maxLen) {
-			maxLen = arr.length;
+			maxLen = str.length;
 		}
 	}
 	
 	return inputArray.filter( (str) => {
-		return arr.length === maxLen;
+		return str.length === maxLen;
 	});
 	
 }

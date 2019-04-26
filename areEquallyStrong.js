@@ -72,13 +72,19 @@ true if you and your friend are equally strong, false otherwise.
 //p.s. Dylan Israel решил задачу в лоб, сравнив сильнейшие руки и слабейшие.
 function f(myLeft, myRight, friendsLeft, friendsRight) {
 	let me =	[].slice.call(arguments, 0, 2);
+
 	let friend = [].slice.call(arguments, 2);
+
 	me.sort( (a, b) => a - b);
 	friend.sort( (a, b) => a - b);
-	me.forEach( (hand, index) => {
-		if (hand != friend[index]) return false;
-	});
+	//console.log(me);
+	//console.log(friend);
+	for (let i = 0; i < me.length; i++) {
+		if (me[i] != friend[i]) return false;
+	}
 	return true;
 }
+
+console.log(f(15,10,15,9));
 
 module.exports = { f };

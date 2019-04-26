@@ -92,3 +92,5 @@ function f(arr1, arr2) {
 	return false;
 }
 
+module.exports = { f };
+

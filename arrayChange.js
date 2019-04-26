@@ -40,9 +40,9 @@ function f(inputArr) {
 */
 
 //оптимизация
-function f(inputArray) {
+function f(inputArr) {
 	let count = 0;
-	for (let i = 1; i < inputArray.length; i++) {
+	for (let i = 1; i < inputArr.length; i++) {
 		if (inputArr[i] <= inputArr[i-1]) {
 			let val = inputArr[i-1] - inputArr[i] + 1;
 			count += val;

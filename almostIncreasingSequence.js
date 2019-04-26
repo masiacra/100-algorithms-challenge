@@ -37,8 +37,8 @@ false.
 */
 
 
-/*
- * Решение в лоб!
+
+//Решение в лоб!
 //Последовательность является возрастающей, когда каждый ее член больше
 //предыдущего
 
@@ -57,19 +57,19 @@ function f(sequence) {
 	// стала ли последовательность возрастающей
 
 	for (let i = 0; i < sequence.length; i++) {
-		if (isIncreasing(sequence.slice(0,i).concat(sequence(i+1)))) {
+		if (isIncreasing(sequence.slice(0,i).concat(sequence.slice(i+1)))) {
 			return true;
 		}
 	}
 	return true;
 
 }
-* 
-*/
+
+
 
 //Последовательность почти возрастает, если количество неправильных 
 //членов не больше одного. Подсчитаем количество некорректных элементов.
-
+/*
 function f(sequence) {
 	let mistakes = 0;
 	for (let i = 1; i < sequence.length; i++) {
@@ -80,6 +80,7 @@ function f(sequence) {
 	}
 	return mistakes < 2;
 }
-
+*/
 
 module.exports = { f };
+

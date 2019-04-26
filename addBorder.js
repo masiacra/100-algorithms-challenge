@@ -37,7 +37,7 @@ The same matrix of characters, framed with a border of asterisks of width 1.
 
 function addBorder(picture) {
 	let len = picture[0].length;
-	let aserisks = '*'.repeat(len + 2);
+	let asterisks = '*'.repeat(len + 2);
 	picture = picture.map( str => {
 		return '*' + str + '*';
 	});

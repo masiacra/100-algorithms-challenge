@@ -33,7 +33,8 @@ Guaranteed constraints: 1 ≤ k ≤ inputArray.length.
 The maximal possible sum.
 */
 
-
+/*
+//Решение в лоб: последовательно считаем суммы подмассивов.
 
 function f(inputArray, k) {
 	//вспомогательная функция подсчета суммы элементов массива
@@ -52,7 +53,34 @@ function f(inputArray, k) {
 	return max;
 	
 }
+*/
+
+
+//Dylan Israel принимает за максимальную сумму сумму первых k элементов
+//Далее в другой переменной он последовательно вычитает в цикле 
+//предыдущий элемент и прибавляет текущий. Преимущество такого подхода
+//в том, что нам не надо тратить память на дополнительный массив
+
+function f(inpArr, k) {
+	let sum = 0;
+	for (let i = 0; i < k; i++) {
+		sum += inpArr[i];
+	}
+	let max = sum;
+	for (let i = k; i < inpArr.length; i++) {
+		sum -= inpArr[i-k];
+		sum += inpArr[i];
+		if (sum > max) {
+			max = sum;
+		}
+	}
+	return max;
+	
+}
+
+//сравним время работы алгоритмов
+console.log(f([2, 3, 5, 1, 6], 2), 15);
 
 
 
-module.exports = f;
+module.exports = { f };

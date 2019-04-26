@@ -59,4 +59,4 @@ function absoluteValuesSumMinimization(arr) {
 	return x;
 }
 
-exports.absoluteValuesSumMinimization = absoluteValuesSumMinimization;
+module.exports = { absoluteValuesSumMinimization };
