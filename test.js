@@ -284,3 +284,11 @@ it('Для входных параметров [1, 2, 1], 1, 3 arrayReplace до
 	assert.deepEqual(exc17.f([1, 2, 1], 1, 3), [3, 2, 3]);
 });
 
+const exc18 = require('./avoidObstacles');
+
+it('Для задачи avoidObstacles при входном массиве [5, 3, 6, 7, 9] ответ 4',
+	() => {
+	
+	assert.equal(exc18.f([5, 3, 6, 7, 9]), 4);
+		
+});
