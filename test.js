@@ -216,3 +216,12 @@ it('Проверка для задачи arrayChange', () => {
 		assert.equal(exc13.f([9,10,13,9]), 5);
 	});
 });
+
+
+const exc14 = require('./arrayConversion');
+
+it('Проверка для задачи arrayConversion', () => {
+	it('Для массива [1, 2, 3, 4, 5, 6, 7, 8] ответ 186', () => {
+		assert.equal(exc14.f([1, 2, 3, 4, 5, 6, 7, 8]), 186);
+	});
+});
