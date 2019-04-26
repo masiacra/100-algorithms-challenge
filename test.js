@@ -261,3 +261,19 @@ it('Для массива [2, 3, 5, 1, 6] и k = 5 arrayMaxConsecutiveSum вер
 });
 
 
+const exc16 = require('./arrayPreviousLess');
+
+it('Для массива [3, 5, 2, 4, 5] arrayPreviousLess должна выдавать ' +
+	'[-1, 3, -1, 2, 4]', () => {
+	
+	assert.deepEqual(exc16.f([3, 5, 2, 4, 5]), [-1, 3, -1, 2, 4]);
+	
+});
+
+it('Для массива [3,5,2,6,5] arrayPreviousLess должна выдавать ' +
+	'[-1, 3, -1, 2, 2]', () => {
+
+	assert.deepEqual(exc16.f([3,5,2,6,5]), [-1, 3, -1, 2, 2]);
+});
+
+

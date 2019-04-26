@@ -60,7 +60,7 @@ function f(sequence) {
 	return mistakes <= 1;
 }
 
-console.log(f([5, 0, 6, 3]));
+
 
 module.exports = { f };
 
