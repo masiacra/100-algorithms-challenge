@@ -38,49 +38,29 @@ false.
 
 
 
-//Решение в лоб!
 //Последовательность является возрастающей, когда каждый ее член больше
-//предыдущего
-
-function f(sequence) {
-	
-	//Вспомогательная функция для проверки, является ли последовательность
-	//возрастающей
-	function isIncreasing(seq) {
-		for (let i = 1; i < seq.length; i++) {
-			if (seq[i] < seq[i-1]) return false;
-		}
-		return true;
-	}
-	
-	//Последовательно выкидываем элементы, начиная с первого, и проверяем,
-	// стала ли последовательность возрастающей
-
-	for (let i = 0; i < sequence.length; i++) {
-		if (isIncreasing(sequence.slice(0,i).concat(sequence.slice(i+1)))) {
-			return true;
-		}
-	}
-	return true;
-
-}
-
-
-
+//предыдущего.
 //Последовательность почти возрастает, если количество неправильных 
 //членов не больше одного. Подсчитаем количество некорректных элементов.
-/*
+
 function f(sequence) {
 	let mistakes = 0;
 	for (let i = 1; i < sequence.length; i++) {
-		if (sequence[i] <= sequence[i+1]) {
+		if (sequence[i] <= sequence[i-1]) {
 			mistakes++;
-			if (mistakes >= 2) return false; 
+			//в этом месте мы пытаемся "вычеркнуть" элемент 
+			//и проверить, будет ли возрастать последовательность 
+			//в этом случае
+			if (sequence[i] <= sequence[i-2] && 
+				sequence[i+1] <= sequence[i-1]) {
+					return false;
+			}
 		}
 	}
-	return mistakes < 2;
+	return mistakes <= 1;
 }
-*/
+
+console.log(f([5, 0, 6, 3]));
 
 module.exports = { f };
 

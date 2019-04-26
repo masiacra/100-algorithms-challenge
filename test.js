@@ -115,18 +115,29 @@ it('Для последовательност [5, 1, 2, 3] almostIncreasingSeque
 	' вернуть true', () => {
 	assert.equal(exc7.f([5, 1, 2, 3]), true);
 });
-	
+
+it('Для последовательност [5, 0, 2, 3] almostIncreasingSequence должна' +
+	' вернуть true', () => {
+	assert.equal(exc7.f([5, 0, 2, 3]), true);
+});
+
 it('Для последовательност [3, 7, 8, 1] almostIncreasingSequence должна ' +
 	' вернуть true', () => {
 	assert.equal(exc7.f([3, 7, 8, 1]), true);
 });
 	
 it('Для последовательност [3, 2, 8, 1] almostIncreasingSequence должна' +
-	'вернуть ответ false', () => {
+	' вернуть ответ false', () => {
 	assert.equal(exc7.f([3, 2, 8, 1]), false);
 });
-	
-
+it('Для последовательност [1,3,1,2] almostIncreasingSequence должна' +
+	' вернуть ответ false', () => {
+	assert.equal(exc7.f([1,3,1,2]), false);
+});	
+it('Для последовательност [1,3,1,1] almostIncreasingSequence должна' +
+	' вернуть ответ false', () => {
+	assert.equal(exc7.f([1,3,1,1]), false);
+});	
 
 const exc8 = require('./alphabetSubSequence');
 
