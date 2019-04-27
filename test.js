@@ -372,3 +372,22 @@ it('Для задачи characterParity для symb = "q" ответ долже�
 	() => {
 		assert.equal(exc23.f('q'), 'not a digit');
 });
+
+
+
+const exc24 = require('./checkPalindrome');
+ 
+it('Для задачи checkPalindrome при входной строке "aabaa" ответ true', 
+	() => {
+	assert.equal(exc24.f("aabaa"), true);	
+});
+
+it('Для задачи checkPalindrome при входной строке "abac" ответ true', 
+	() => {
+	assert.equal(exc24.f("abac"), false);	
+});
+
+it('Для задачи checkPalindrome при входной строке "a" ответ true', 
+	() => {
+	assert.equal(exc24.f("a"), true);	
+});
