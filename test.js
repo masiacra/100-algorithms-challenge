@@ -320,3 +320,9 @@ it('Для задачи bishopAndPawn при входных данных "b7" и
 	() => {
 		assert.equal(exc19.f('b7', 'f6'), false);
 });
+
+const exc20 = require('./candies');
+
+it('Для задачи candies при m = 10 и n = 3 ответ должен быть 3', () => {
+	assert.equal(exc20.f(10, 3), 3);
+});
