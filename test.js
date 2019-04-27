@@ -410,3 +410,21 @@ it('Для задачи chessBoardCellColor при входных парамет
 	' ответ true', () => {
 	assert.equal(exc25.f('A1', 'E7'), true);
 });
+
+
+const exc26 = require('./chunkyMonkey');
+
+it('Для задачи chunkyMonkey при входных параметрах '+
+	'["a", "b", "c", "d"] и 2 ответ [["a", "b"], ["c", "d"]]', () => {
+	
+	assert.deepEqual(exc26.f(["a", "b", "c", "d"], 2), 
+		[["a", "b"], ["c", "d"]]);
+		
+});
+it('Для задачи chunkyMonkey при входных параметрах '+
+	'[0, 1, 2, 3, 4, 5] и 4 ответ [[0, 1, 2, 3], [4, 5]]', () => {
+	
+	assert.deepEqual(exc26.f([0, 1, 2, 3, 4, 5], 4), 
+		[[0, 1, 2, 3], [4, 5]]);
+		
+});
