@@ -391,3 +391,22 @@ it('Для задачи checkPalindrome при входной строке "a" �
 	() => {
 	assert.equal(exc24.f("a"), true);	
 });
+
+
+
+const exc25 = require('./chessBoardCellColor');
+
+it('Для задачи chessBoardCellColor при входных параметрах "A1", "C3"' +
+	' ответ true', () => {
+	assert.equal(exc25.f('A1', 'C3'), true);
+});
+
+it('Для задачи chessBoardCellColor при входных параметрах "A1", "H3"' +
+	' ответ false', () => {
+	assert.equal(exc25.f('A1', 'H3'), false);
+});
+
+it('Для задачи chessBoardCellColor при входных параметрах "A1", "E3"' +
+	' ответ true', () => {
+	assert.equal(exc25.f('A1', 'E7'), true);
+});
