@@ -428,3 +428,14 @@ it('Для задачи chunkyMonkey при входных параметрах 
 		[[0, 1, 2, 3], [4, 5]]);
 		
 });
+
+const exc27 = require('./commonCharacterCount');
+
+it('Для задачи commonCharacterCount при входных строках "aabcc" и "adcaa"' +
+	' ответ должен быть 3', () => {
+	assert.equal(exc27.f("aabcc", "adcaa"), 3);
+});
+it('Для задачи commonCharacterCount при входных строках "zxy" и "abedzy"' +
+	' ответ должен быть 2', () => {
+	assert.equal(exc27.f("zxy", "abedzy"), 2);
+});
