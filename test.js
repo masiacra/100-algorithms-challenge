@@ -292,3 +292,31 @@ it('Для задачи avoidObstacles при входном массиве [5, 
 	assert.equal(exc18.f([5, 3, 6, 7, 9]), 4);
 		
 });
+
+
+const exc19 = require('./bishopAndPawn');
+
+it('Для задачи bishopAndPawn при входных данных "a1" и "c3" ответ true',
+	() => {
+		assert.equal(exc19.f('a1', 'c3'), true);
+});
+it('Для задачи bishopAndPawn при входных данных "d4" и "c3" ответ true',
+	() => {
+		assert.equal(exc19.f('d4', 'c3'), true);
+});	
+
+
+it('Для задачи bishopAndPawn при входных данных "c4" и "f5" ответ false',
+	() => {
+		assert.equal(exc19.f('c4', 'f5'), false);
+});
+
+it('Для задачи bishopAndPawn при входных данных "b7" и "a8" ответ true',
+	() => {
+		assert.equal(exc19.f('b7', 'a8'), true);
+});
+
+it('Для задачи bishopAndPawn при входных данных "b7" и "f6" ответ false',
+	() => {
+		assert.equal(exc19.f('b7', 'f6'), false);
+});
