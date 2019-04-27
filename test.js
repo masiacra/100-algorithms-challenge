@@ -326,3 +326,16 @@ const exc20 = require('./candies');
 it('Для задачи candies при m = 10 и n = 3 ответ должен быть 3', () => {
 	assert.equal(exc20.f(10, 3), 3);
 });
+
+
+const exc21 = require('./caseInsensitivePalindrome');
+
+it('Для задачи caseInsensitivePalindrome для строки AaBaa ответ true', () => {
+	assert.equal(exc21.f('AaBaa'), true);
+});
+it('Для задачи caseInsensitivePalindrome для строки madaM ответ true', () => {
+	assert.equal(exc21.f('madaM'), true);
+});
+it('Для задачи caseInsensitivePalindrome для строки abac ответ false', () => {
+	assert.equal(exc21.f('abac'), false);
+});
