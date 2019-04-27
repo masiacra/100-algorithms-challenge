@@ -339,3 +339,17 @@ it('Для задачи caseInsensitivePalindrome для строки madaM от
 it('Для задачи caseInsensitivePalindrome для строки abac ответ false', () => {
 	assert.equal(exc21.f('abac'), false);
 });
+
+const exc22 = require('./centuryFromYear');
+
+it('Для задачи centuryFromYear для year = 1905 ответ 20', () => {
+	assert.equal(exc22.f(1905), 20);
+});
+
+it('Для задачи centuryFromYear для year = 1905 ответ 20', () => {
+	assert.equal(exc22.f(2001), 21);
+});
+
+it('Для задачи centuryFromYear для year = 1905 ответ 20', () => {
+	assert.equal(exc22.f(1700), 17);
+});
