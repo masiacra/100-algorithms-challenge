@@ -353,3 +353,22 @@ it('Для задачи centuryFromYear для year = 1905 ответ 20', () =>
 it('Для задачи centuryFromYear для year = 1905 ответ 20', () => {
 	assert.equal(exc22.f(1700), 17);
 });
+
+
+const exc23 = require('./characterParity');
+
+it('Для задачи characterParity для symb = "5" ответ должен быть odd', 
+	() => {
+		assert.equal(exc23.f('5'), 'odd');
+});
+
+
+it('Для задачи characterParity для symb = "8" ответ должен быть odd', 
+	() => {
+		assert.equal(exc23.f('8'), 'even');
+});
+
+it('Для задачи characterParity для symb = "q" ответ должен быть odd', 
+	() => {
+		assert.equal(exc23.f('q'), 'not a digit');
+});
