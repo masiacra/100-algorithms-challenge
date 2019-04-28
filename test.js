@@ -512,3 +512,19 @@ it('Для задачи confirmEnding для входных аргументов
 	assert.equal(exc31.f("Open sesame", "pen"), false);
 	
 });
+
+const exc32 = require('./containsCloseNums');
+
+it('Для задачи containsCloseNums для входных аргументов' + 
+	' [0, 1, 2, 3, 5, 2] и 3 ответ true', () => {
+	assert.equal(exc32.f([0, 1, 2, 3, 5, 2], 3), true);
+});
+it('Для задачи containsCloseNums для входных аргументов' +
+	' [0, 1, 2, 3, 5, 2] и 2 ответ false', () => {
+	assert.equal(exc32.f([0, 1, 2, 3, 5, 2], 2), false);
+});
+
+it('Для задачи containsCloseNums для входных аргументов' +
+	' [0, 1, 2, 3, 5, 5] и 1 ответ true', () => {
+	assert.equal(exc32.f([0, 1, 2, 3, 5, 5], 1), true);
+});
