@@ -605,3 +605,23 @@ it('Для задачи digitDegree при n = 100 ответ должен бы�
 it('Для задачи digitDegree при n = 91 ответ должен быть 2', () => {
 	assert.equal(exc38.f(91), 2);
 });
+
+
+const exc39 = require('./domainType');
+
+it('Для задачи domainType при входном массиве ["en.wiki.org", ' +
+	' "codefights.com", "happy.net", "code.info"] ответ будет ' +
+	'["organization", "commercial", "network", "information"]', () => {
+		assert.deepEqual(exc39.f(["en.wiki.org","codefights.com", "happy.net", "code.info"]),
+			["organization", "commercial", "network", "information"]);
+});
+
+
+const exc40 = require('./encloseInBrackets');
+
+it('Для задачи encloseInBrackets при входной строке "acab" результат ' +
+	'должен быть "(acab)"', () => {
+	
+	assert.equal(exc40.f('acab'), '(acab)');
+	
+});
