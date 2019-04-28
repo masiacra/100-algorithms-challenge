@@ -496,3 +496,19 @@ it('Для задачи composeRanges для входного массива [1,
 	assert.deepEqual(exc30.f([1, 3, 5, 7, 9]), ["1", "3", "5", "7", "9"]);
 	
 });
+
+
+const exc31 = require('./confirmEnding');
+
+it('Для задачи confirmEnding для входных аргументов "Abstraction" ' +
+	' и "action" ответ true', () => {
+	
+	assert.equal(exc31.f("Abstraction", "action"), true);
+	
+});
+it('Для задачи confirmEnding для входных аргументов "Open sesame" ' +
+	' и "pen" ответ false', () => {
+	
+	assert.equal(exc31.f("Open sesame", "pen"), false);
+	
+});
