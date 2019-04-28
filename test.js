@@ -575,3 +575,22 @@ it('Для задачи convertString при входных строках "addb
 	assert.equal(exc35.f("addbyca", "abcd"), false);
 
 });
+
+const exc36 = require('./depositProfit');
+
+it('Для задачи depositProfit при входных данных 100, 20 и 170 ' +
+	' ответ будет 3', () => {
+	
+	assert.equal(exc36.f(100, 20, 170), 3);
+
+});
+
+
+const exc37 = require('./differentSymbolsNaive');
+it('Для задачи differentSymbolsNaive при входной строке "cabca" ' +
+	'ответ будет 3', () => {
+		
+	assert.equal(exc37.f("cabca"), 3);
+		
+});
+
