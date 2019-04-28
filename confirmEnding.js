@@ -17,10 +17,16 @@ Hints
 substr()
 */
 
-
+/*
 function f(first, second) {
 	const start = first.length - second.length;
 	return first.slice(start) === second;
+}
+*/
+
+function f(first, second) {
+	const reg = new RegExp(second+'$');
+	return reg.test(first);
 }
 
 
