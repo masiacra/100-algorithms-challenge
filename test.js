@@ -528,3 +528,19 @@ it('Для задачи containsCloseNums для входных аргумент
 	' [0, 1, 2, 3, 5, 5] и 1 ответ true', () => {
 	assert.equal(exc32.f([0, 1, 2, 3, 5, 5], 1), true);
 });
+
+
+const exc33 = require('./containsDuplicates');
+
+it('Для задачи containsDuplicates для входного массива [1, 2, 3, 1]' + 
+	' должен выдавать true', () => {
+		
+	assert.equal(exc33.f([1, 2, 3, 1]), true);	
+			
+});
+it('Для задачи containsDuplicates для входного массива [1, 3]' + 
+	' должен выдавать true', () => {
+		
+	assert.equal(exc33.f([1, 3]), false);	
+			
+});
