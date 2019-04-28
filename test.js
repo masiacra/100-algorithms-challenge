@@ -594,3 +594,14 @@ it('Для задачи differentSymbolsNaive при входной строке
 		
 });
 
+const exc38 = require('./digitDegree');
+
+it('Для задачи digitDegree при n = 5 ответ должен быть 0', () => {
+	assert.equal(exc38.f(5), 0);
+});
+it('Для задачи digitDegree при n = 100 ответ должен быть 1', () => {
+	assert.equal(exc38.f(100), 1);
+});
+it('Для задачи digitDegree при n = 91 ответ должен быть 2', () => {
+	assert.equal(exc38.f(91), 2);
+});
