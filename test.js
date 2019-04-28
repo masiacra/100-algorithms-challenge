@@ -544,3 +544,19 @@ it('Для задачи containsDuplicates для входного массив�
 	assert.equal(exc33.f([1, 3]), false);	
 			
 });
+
+
+const exc34 = require('./convertCelsiusToFahrenheit');
+
+it('Для задачи convertCelsiusToFahrenheit при входном аргументе -30' +
+	' ответ должен быть -22', () => {
+		assert.equal(exc34.f(-30), -22);
+});
+it('Для задачи convertCelsiusToFahrenheit при входном аргументе -10' +
+	' ответ должен быть 14', () => {
+		assert.equal(exc34.f(-10), 14);
+});
+it('Для задачи convertCelsiusToFahrenheit при входном аргументе 0' +
+	' ответ должен быть 32', () => {
+		assert.equal(exc34.f(0), 32);
+});
