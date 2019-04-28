@@ -560,3 +560,18 @@ it('Для задачи convertCelsiusToFahrenheit при входном арг�
 	' ответ должен быть 32', () => {
 		assert.equal(exc34.f(0), 32);
 });
+
+const exc35 = require('./convertString');
+
+it('Для задачи convertString при входных строках "ceoydefthf5iyg5h5yts"' +
+	' и "codefights" ответ true', () => {
+		
+	assert.equal(exc35.f("ceoydefthf5iyg5h5yts", "codefights"), true);
+
+});
+it('Для задачи convertString при входных строках "addbyca" и' +
+	' "abcd" ответ false', () => {
+		
+	assert.equal(exc35.f("addbyca", "abcd"), false);
+
+});
