@@ -683,3 +683,16 @@ it('Для задачи fancyRide для входных данных l = 30 и '
 	assert.equal(exc45.f(30, [0.3, 0.5, 0.7, 1, 1.3]), "UberXL");
 		
 });
+
+
+const exc46 = require('./fareEstimator');
+
+it('Для задачи fareEstimator при входных данных ride_time = 30, ' +
+	' ride_distance = 7, cost_per_minute = [0.2, 0.35, 0.4, 0.45], ' +
+	' cost_per_mile = [1.1, 1.8, 2.3, 3.5] ответ будет ' 	+
+	'[13.7, 23.1, 28.1, 38]', () => {
+		
+	assert.deepEqual(exc46.f(30, 7, [0.2, 0.35, 0.4, 0.45],
+		[1.1, 1.8, 2.3, 3.5]), [13.7, 23.1, 28.1, 38]);
+		
+});
