@@ -625,3 +625,20 @@ it('Для задачи encloseInBrackets при входной строке "ac
 	assert.equal(exc40.f('acab'), '(acab)');
 	
 });
+
+
+const exc41 = require('./evenDigitsOnly');
+
+it('Для задачи evenDigitsOnly при входном числе 248622 ответ должен ' +
+	'быть true', () => {
+		
+	assert.equal(exc41.f(248622), true);	
+		
+});
+
+it('Для задачи evenDigitsOnly при входном числе 642386 ответ должен ' +
+	'быть false', () => {
+		
+	assert.equal(exc41.f(642386), false);	
+		
+});
