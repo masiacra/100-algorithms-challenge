@@ -720,3 +720,19 @@ it('Для задачи findClosestPair при входных данных [2, 3
 		
 		
 });
+
+const exc48 = require('./findEmailDomain');
+
+
+it('Для задачи findEmailDomain при входной строке ' +
+	'"prettyandsimple@example.com" ответ "example.com"', () => {
+	
+	assert.equal(exc48.f("prettyandsimple@example.com"), "example.com");
+		
+});
+it('Для задачи findEmailDomain при входной строке ' +
+	'"<>[]:,;@"!#$%&*+-/=?^_{}| ~.a"@example.org" ответ "example.org"', () => {
+	
+	assert.equal(exc48.f('<>[]:,;@"!#$%&*+-/=?^_{}| ~.a"@example.org'), "example.org");
+		
+});
