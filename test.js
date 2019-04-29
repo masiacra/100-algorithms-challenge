@@ -665,3 +665,12 @@ it('Для задачи extractMatrixColumn при входных данных '
 		[1, 0, 3]);
 		
 });
+
+const exc44 = require('./factorializeANumber');
+
+it('Для задачи factorializeANumber для числа 5 ответ 120', () => {
+	assert.equal(exc44.f(5), 120);
+});
+it('Для задачи factorializeANumber для числа 10 ответ 3628800', () => {
+	assert.equal(exc44.f(10), 3628800);
+});
