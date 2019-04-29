@@ -674,3 +674,12 @@ it('Для задачи factorializeANumber для числа 5 ответ 120',
 it('Для задачи factorializeANumber для числа 10 ответ 3628800', () => {
 	assert.equal(exc44.f(10), 3628800);
 });
+
+const exc45 = require('./fancyRide');
+
+it('Для задачи fancyRide для входных данных l = 30 и ' + 
+	'fares = [0.3, 0.5, 0.7, 1, 1.3] ответ "UberXL"', () => {
+	
+	assert.equal(exc45.f(30, [0.3, 0.5, 0.7, 1, 1.3]), "UberXL");
+		
+});
