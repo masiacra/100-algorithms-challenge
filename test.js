@@ -736,3 +736,15 @@ it('Для задачи findEmailDomain при входной строке ' +
 	assert.equal(exc48.f('<>[]:,;@"!#$%&*+-/=?^_{}| ~.a"@example.org'), "example.org");
 		
 });
+
+const exc49 = require('./firstDigit');
+
+it('Для задачи firstDigit для строки "var_1__Int" ответ 1', () => {
+	assert.equal(exc49.f("var_1__Int"), 1);
+});
+it('Для задачи firstDigit для строки "q2q-q" ответ 1', () => {
+	assert.equal(exc49.f("q2q-q"), 2);
+});
+it('Для задачи firstDigit для строки "0ss" ответ 1', () => {
+	assert.equal(exc49.f("0ss"), 0);
+});
