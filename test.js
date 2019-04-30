@@ -764,7 +764,7 @@ it('Для задачи firstDuplicateNumber для массива [2, 4, 3, 5, 
 	assert.equal(exc50.f([2, 4, 3, 5, 1]), -1);
 
 });
-
+[5, 1, 2, 3, 0, 1, 5, 0, 2]
 const exc51 = require('./firstNotRepeatingCharacter');
 
 it('Для задачи firstNotRepeatingCharacter при входной строк ' +
@@ -791,5 +791,24 @@ it('Для задачи flattenArray для массива [1, [2], [3, [[4]]]] 
 	' [1, 2, 3, 4]', () => {
 	
 	assert.deepEqual(exc52.f([1, [2], [3, [[4]]]]), [1, 2, 3, 4]);	
+		
+});
+
+const exc53 = require('./growingPlant');
+
+it('Для задачи growingPlant для входных значений 100, 10, 910 ' +
+	'ответ 10', () => {
+	
+	assert.equal(exc53.f(100,10,910), 10);
+		
+});
+
+
+const exc54 = require('./houseNumbersSum');
+
+it('Для задачи houseNumbersSum для входного массива ' +
+	'[5, 1, 2, 3, 0, 1, 5, 0, 2] ответ 11', () => {
+		
+	assert.equal(exc54.f([5, 1, 2, 3, 0, 1, 5, 0, 2]), 11);
 		
 });
