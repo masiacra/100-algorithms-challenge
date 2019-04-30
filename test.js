@@ -881,3 +881,11 @@ it('Для задачи integerToStringOfWixedWidth при входных дан
 	assert.equal(exc58.f(1234, 6), '001234');
 		
 });
+
+const exc59 = require('./isLucky');
+it('Для задачи isLucky при входном числе n = 1230 ответ true', () => {
+	assert.equal(exc59.f(1230), true);
+});
+it('Для задачи isLucky при входном числе n = 239017 ответ false', () => {
+	assert.equal(exc59.f(239017), false);
+});
