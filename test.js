@@ -812,3 +812,19 @@ it('Для задачи houseNumbersSum для входного массива '
 	assert.equal(exc54.f([5, 1, 2, 3, 0, 1, 5, 0, 2]), 11);
 		
 });
+
+const exc55 = require('./htmlEndTagByStartTag');
+
+it('Для задачи htmlEndTagByStartTag при входном теге ' +
+	'"<BUTTON TYPE=\'BUTTON\' DISSABLED>" ответ "</BUTTON>"', () => {
+	
+	assert.equal(exc55.f("<BUTTON TYPE=\'BUTTON\' DISSABLED>"), "</BUTTON>");
+		
+});
+
+it('Для задачи htmlEndTagByStartTag при входном теге ' +
+	'<i> ответ </i>', () => {
+	
+	assert.equal(exc55.f("<i>"), "</i>");
+		
+});

@@ -1,1 +1,1 @@
-boxBlur, circleOfNumbers, crossingSum, electionWinners, fermactor
+boxBlur, circleOfNumbers, crossingSum, electionWinners, fermactor,houseOfCats
