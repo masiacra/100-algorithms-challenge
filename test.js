@@ -748,3 +748,19 @@ it('Для задачи firstDigit для строки "q2q-q" ответ 1', ()
 it('Для задачи firstDigit для строки "0ss" ответ 1', () => {
 	assert.equal(exc49.f("0ss"), 0);
 });
+
+
+const exc50 = require('./firstDuplicateNumber');
+
+it('Для задачи firstDuplicateNumber для массива [2, 1, 3, 5, 3, 2] ' +
+	'значение 3', () => {
+		
+	assert.equal(exc50.f([2, 1, 3, 5, 3, 2]), 3);
+
+});
+it('Для задачи firstDuplicateNumber для массива [2, 4, 3, 5, 1] ' +
+	'значение -1', () => {
+		
+	assert.equal(exc50.f([2, 4, 3, 5, 1]), -1);
+
+});
