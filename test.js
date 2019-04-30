@@ -889,3 +889,30 @@ it('Для задачи isLucky при входном числе n = 1230 отв
 it('Для задачи isLucky при входном числе n = 239017 ответ false', () => {
 	assert.equal(exc59.f(239017), false);
 });
+
+
+const exc60 = require('./isTandemRepeat');
+it('Для задачи isTandemRepeat при входной строке "tandemtandem" ответ' +
+	' true', () => {
+		
+	assert.equal(exc60.f("tandemtandem"), true);
+		
+});
+it('Для задачи isTandemRepeat при входной строке "qqq" ответ' +
+	' false', () => {
+		
+	assert.equal(exc60.f("qqq"), false);
+		
+});
+it('Для задачи isTandemRepeat при входной строке "qqq" ответ' +
+	' true', () => {
+		
+	assert.equal(exc60.f("qq"), true);
+		
+});
+it('Для задачи isTandemRepeat при входной строке "2w2ww" ответ' +
+	' false', () => {
+		
+	assert.equal(exc60.f("2w2ww"), false);
+		
+});
