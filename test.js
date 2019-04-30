@@ -764,3 +764,16 @@ it('Для задачи firstDuplicateNumber для массива [2, 4, 3, 5, 
 	assert.equal(exc50.f([2, 4, 3, 5, 1]), -1);
 
 });
+
+const exc51 = require('./firstNotRepeatingCharacter');
+
+it('Для задачи firstNotRepeatingCharacter при входной строк ' +
+	'"abacabad" ответ "c" ', () => {
+
+	assert.equal(exc51.f("abacabad"), "c");
+}); 
+it('Для задачи firstNotRepeatingCharacter при входной строк ' +
+	'"abacabaabacaba" ответ "_" ', () => {
+
+	assert.equal(exc51.f("abacabaabacaba"), "_");
+}); 
