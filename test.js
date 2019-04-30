@@ -860,3 +860,24 @@ it('Для задачи incrementalBackups для входных данных ' 
 	[461620208, 1]]), [1,3,5]);
 		
 });
+
+const exc58 = require('./integerToStringOfWixedWidth');
+
+it('Для задачи integerToStringOfWixedWidth при входных данных ' + 
+	'number = 1234 и width = 2 ответ "34"', () => {
+	
+	assert.equal(exc58.f(1234, 2), '34');
+		
+});
+it('Для задачи integerToStringOfWixedWidth при входных данных ' + 
+	'number = 1234 и width = 4 ответ "1234"', () => {
+	
+	assert.equal(exc58.f(1234, 4), '1234');
+		
+});
+it('Для задачи integerToStringOfWixedWidth при входных данных ' + 
+	'number = 1234 и width = 6 ответ "001234"', () => {
+	
+	assert.equal(exc58.f(1234, 6), '001234');
+		
+});
