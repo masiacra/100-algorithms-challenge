@@ -777,3 +777,19 @@ it('Для задачи firstNotRepeatingCharacter при входной стр�
 
 	assert.equal(exc51.f("abacabaabacaba"), "_");
 }); 
+
+const exc52 = require('./flattenArray');
+
+
+it('Для задачи flattenArray для массива [[["a"]], [["b"]]] ответ ' +
+	' ["a", "b"]', () => {
+	
+	assert.deepEqual(exc52.f([[["a"]], [["b"]]]), ['a', 'b']);	
+		
+});
+it('Для задачи flattenArray для массива [1, [2], [3, [[4]]]] ответ ' +
+	' [1, 2, 3, 4]', () => {
+	
+	assert.deepEqual(exc52.f([1, [2], [3, [[4]]]]), [1, 2, 3, 4]);	
+		
+});
