@@ -1005,3 +1005,16 @@ it('Для задачи missingLetters при входной строке "abcde
 it('Для задачи missingLetters при входной строке "abcdefghijklmnopqrstuvwxyz" ответ undefined', () => {
 	assert.equal(exc68.f("abcdefghijklmnopqrstuvwxyz"), undefined);
 });
+
+
+const exc69 = require('./mostFrequentDigitSum');
+
+it('Для задачи mostFrequentDigitSum при n = 88 ответ должен быть 9', () => {
+	assert.equal(exc69.f(88), 9);
+});
+it('Для задачи mostFrequentDigitSum при n = 8 ответ должен быть 8', () => {
+	assert.equal(exc69.f(8), 8);
+});
+it('Для задачи mostFrequentDigitSum при n = 1 ответ должен быть 1', () => {
+	assert.equal(exc69.f(1), 1);
+});
