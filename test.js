@@ -1018,3 +1018,19 @@ it('Для задачи mostFrequentDigitSum при n = 8 ответ долже�
 it('Для задачи mostFrequentDigitSum при n = 1 ответ должен быть 1', () => {
 	assert.equal(exc69.f(1), 1);
 });
+
+
+const exc70 = require('./pagesNumberingWithInk');
+
+it('Для задачи pagesNumberingWithInk при current = 1 и ' +
+	'numberOfDigits = 5 ответ должен быть 5', () => {
+	assert.equal(exc70.f(1, 5), 5);	
+});
+it('Для задачи pagesNumberingWithInk при current = 21 и ' +
+	'numberOfDigits = 5 ответ должен быть 22', () => {
+	assert.equal(exc70.f(21, 5), 22);	
+});
+it('Для задачи pagesNumberingWithInk при current = 8 и ' +
+	'numberOfDigits = 4 ответ должен быть 10', () => {
+	assert.equal(exc70.f(8, 4), 10);	
+});
