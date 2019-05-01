@@ -983,3 +983,13 @@ it('Для задачи matrixElementsSum при входной матрице [
 	assert.equal(exc66.f([[0, 1, 1, 2],[0, 5, 0, 0],[2, 0, 3, 3]]), 9);
 	   
 });
+
+
+const exc67 = require('./maxMultiple');
+
+it('Для задачи maxMultiple при входных данных divisor = 3 и bound = 10' +
+	' ответ должен быть 9', () => {
+	
+	assert.equal(exc67.f(3, 10), 9);
+		
+});
