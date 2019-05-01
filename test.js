@@ -965,3 +965,11 @@ it('Для задачи longestDigitsPrefix при входной строке "
 	assert.equal(exc64.f("123aa1"), "123");
 		
 });
+
+
+const exc65 = require('./makeArrayConsecutive2');
+
+it('Для задачи makeArrayConsecutive2 при входном массиве [6, 2, 3, 8] ' +
+	'ответ должен быть 3', () => {
+	assert.equal(exc65.f([6, 2, 3, 8]), 3);
+});
