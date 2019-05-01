@@ -993,3 +993,15 @@ it('Для задачи maxMultiple при входных данных divisor =
 	assert.equal(exc67.f(3, 10), 9);
 		
 });
+
+const exc68 = require('./missingLetters');
+
+it('Для задачи missingLetters при входной строке "abce" ответ "d"', () => {
+	assert.equal(exc68.f("abce"), 'd');
+});
+it('Для задачи missingLetters при входной строке "abcdefghjklmno" ответ "i"', () => {
+	assert.equal(exc68.f("abcdefghjklmno"), 'i');
+});
+it('Для задачи missingLetters при входной строке "abcdefghijklmnopqrstuvwxyz" ответ undefined', () => {
+	assert.equal(exc68.f("abcdefghijklmnopqrstuvwxyz"), undefined);
+});
