@@ -956,3 +956,12 @@ it('Для задачи lateRide при входном времени 240 отв
 it('Для задачи lateRide при входном времени 240 ответ должен быть 4', () => {
 	assert.equal(exc63.f(808), 14);
 });
+
+const exc64 = require('./longestDigitsPrefix');
+
+it('Для задачи longestDigitsPrefix при входной строке "123aa1" ' +
+	'ответ должен быть "123"', () => {
+		
+	assert.equal(exc64.f("123aa1"), "123");
+		
+});
