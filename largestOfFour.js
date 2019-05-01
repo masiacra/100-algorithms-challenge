@@ -18,4 +18,7 @@ function f(arr) {
 	return arr.map( subarr => Math.max(...subarr));
 }
 
+//Dylan Israel внутри цикла перебирал каждый подмассив и искал 
+//наибольшее число в нем
+
 module.exports = { f };
