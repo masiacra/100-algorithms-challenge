@@ -916,3 +916,13 @@ it('Для задачи isTandemRepeat при входной строке "2w2ww
 	assert.equal(exc60.f("2w2ww"), false);
 		
 });
+
+
+const exc61 = require('./largestNumber');
+
+it('Для задачи largestNumber при n = 2 ответ 99', () => {
+	assert.equal(exc61.f(2), 99);
+});
+it('Для задачи largestNumber при n = 9 ответ 999999999', () => {
+	assert.equal(exc61.f(9), 999999999);
+});
