@@ -1034,3 +1034,23 @@ it('Для задачи pagesNumberingWithInk при current = 8 и ' +
 	'numberOfDigits = 4 ответ должен быть 10', () => {
 	assert.equal(exc70.f(8, 4), 10);	
 });
+
+
+const exc71 = require('./palindromeRearranging');
+
+it('Для задачи palindromeRearranging при входной строке "aabb" ответ' +
+	' true', () => {
+	assert.equal(exc71.f("aabb"), true);
+});
+it('Для задачи palindromeRearranging при входной строке "aaabb" ответ' +
+	' true', () => {
+	assert.equal(exc71.f("aaabb"), true);
+});
+it('Для задачи palindromeRearranging при входной строке "amdm" ответ' +
+	' false', () => {
+	assert.equal(exc71.f("amdm"), false);
+});
+it('Для задачи palindromeRearranging при входной строке "amdam" ответ' +
+	' true', () => {
+	assert.equal(exc71.f("amdam"), true);
+});
