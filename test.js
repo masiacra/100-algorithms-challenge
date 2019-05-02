@@ -1054,3 +1054,19 @@ it('Для задачи palindromeRearranging при входной строке
 	' true', () => {
 	assert.equal(exc71.f("amdam"), true);
 });
+
+
+const exc72 = require('./pigLatin');
+
+it('Для задачи pigLatin при входной строке "glove" ответ должен быть ' +
+	'"oveglay"', () => {
+	assert.equal(exc72.f("glove"), "oveglay");
+}); 
+it('Для задачи pigLatin при входной строке "eight" ответ должен быть ' +
+	'"eightway"', () => {
+	assert.equal(exc72.f("eight"), "eightway");
+}); 
+it('Для задачи pigLatin при входной строке "velvet" ответ должен быть ' +
+	'"elvetvay"', () => {
+	assert.equal(exc72.f("velvet"), "elvetvay");
+}); 
