@@ -1110,3 +1110,13 @@ it('Для задачи properNounCorrection при входной строке 
 	assert.equal(exc74.f('John'),"John");
 		
 });
+
+
+const exc75 = require('./ratingThreshold');
+
+it('Для задачи ratingThreshold при входных данных threshold = 3.5 и' +
+	' ratings = [[3, 4], [3, 3, 3, 4], [4]]  ответ должен быть [1]', () => {
+		
+	assert.deepEqual(exc75.f(3.5, [[3, 4], [3, 3, 3, 4], [4]]), [1]);
+
+});
