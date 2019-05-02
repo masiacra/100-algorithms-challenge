@@ -1212,3 +1212,12 @@ it('Для задачи squareDigitsSequence при входном аргуме�
 it('Для задачи squareDigitsSequence при входном аргументе 103 ответ 4', () => {
 	assert.equal(exc83.f(103), 4);
 });
+
+const exc84 = require('./stolenLunch');
+
+it('Для задачи stolenLunch при входной строке "you\'ll n4v4r 6u4ss 8t: cdja"' +
+	' ответ должен быть "you\'ll never guess it: 2390"', () => {
+	
+	assert.equal(exc84.f("you'll n4v4r 6u4ss 8t: cdja"), "you'll never guess it: 2390");
+		
+});
