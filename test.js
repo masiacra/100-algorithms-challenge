@@ -1120,3 +1120,12 @@ it('Для задачи ratingThreshold при входных данных thres
 	assert.deepEqual(exc75.f(3.5, [[3, 4], [3, 3, 3, 4], [4]]), [1]);
 
 });
+
+const exc76 = require('./reflectString');
+
+it('Для задачи reflectString при входной строке "name" ответ должен ' +
+	'быть "mznv"', () => {
+		
+	assert.equal(exc76.f("name"), "mznv");
+		
+});
