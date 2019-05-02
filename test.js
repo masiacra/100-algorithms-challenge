@@ -1129,3 +1129,19 @@ it('Для задачи reflectString при входной строке "name" 
 	assert.equal(exc76.f("name"), "mznv");
 		
 });
+
+
+const exc77 = require('./reverseAString');
+
+it('Для задачи reverseAString при входной строке "hello" ответ ' +
+	'должен быть "olleh"', () => {
+	
+	assert.equal(exc77.f('hello'), 'olleh');
+	
+});
+it('Для задачи reverseAString при входной строке "Howdy" ответ ' +
+	'должен быть "ydwoH"', () => {
+	
+	assert.equal(exc77.f('Howdy'), 'ydwoH');
+	
+});
