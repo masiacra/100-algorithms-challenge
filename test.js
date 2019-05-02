@@ -1202,3 +1202,13 @@ it('Для задачи sortByLength при входном массиве ["abc"
 	' ответ должен быть ["", "a", "zz", "abc", "aaa"]', () => {
 	assert.deepEqual(exc82.f(["abc", "", "aaa", "a", "zz"]), ["", "a", "zz", "abc", "aaa"]);
 });
+
+
+const exc83 = require('./squareDigitsSequence');
+
+it('Для задачи squareDigitsSequence при входном аргументе 16 ответ 9', () => {
+	assert.equal(exc83.f(16), 9);
+});
+it('Для задачи squareDigitsSequence при входном аргументе 103 ответ 4', () => {
+	assert.equal(exc83.f(103), 4);
+});
