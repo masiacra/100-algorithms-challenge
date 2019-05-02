@@ -1095,3 +1095,18 @@ it('Для задачи proCategorization при входных данных ' +
 	assert.deepEqual(exc73.f(pros, preferences), answer73);
 	
 });
+
+const exc74 = require('./properNounCorrection');
+
+it('Для задачи properNounCorrection при входной строке "pARiS" ' + 
+	'ответ должен быть "Paris"', () => {
+	
+	assert.equal(exc74.f('pARiS'),"Paris");
+		
+});
+it('Для задачи properNounCorrection при входной строке "John" ' + 
+	'ответ должен быть "John"', () => {
+	
+	assert.equal(exc74.f('John'),"John");
+		
+});
