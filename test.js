@@ -1194,3 +1194,11 @@ it('Для задачи sortByHeight при входном массиве [-1, 1
 	assert.deepEqual(exc81.f([-1, 150, 190, 170, -1, -1, 160, 180]),[-1, 150, 160, 170, -1, -1, 180, 190]);
 
 });
+
+
+const exc82 = require('./sortByLength');
+
+it('Для задачи sortByLength при входном массиве ["abc", "", "aaa", "a", "zz"]' +
+	' ответ должен быть ["", "a", "zz", "abc", "aaa"]', () => {
+	assert.deepEqual(exc82.f(["abc", "", "aaa", "a", "zz"]), ["", "a", "zz", "abc", "aaa"]);
+});
