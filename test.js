@@ -1145,3 +1145,12 @@ it('Для задачи reverseAString при входной строке "Howdy
 	assert.equal(exc77.f('Howdy'), 'ydwoH');
 	
 });
+
+const exc78 = require('./seatsInTheater');
+
+it('Для задачи seatsInTheater при входных аргументах nCols = 16, ' +
+	'nRows = 11, col = 5 и row = 3 ответ должен быть 96', () => {
+		
+	assert.equal(exc78.f(16,11,5,3), 96);	
+		
+});
