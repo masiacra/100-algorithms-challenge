@@ -1070,3 +1070,28 @@ it('Для задачи pigLatin при входной строке "velvet" о�
 	'"elvetvay"', () => {
 	assert.equal(exc72.f("velvet"), "elvetvay");
 }); 
+
+
+const exc73 = require('./proCategorization');
+
+it('Для задачи proCategorization при входных данных ' + 
+	'pros = ["Jack", "Leon", "Maria"] и ' +
+	'preferences = [["Computer repair", "Handyman", "House cleaning"],' +
+	'["Computer lessons", "Computer repair", "Data recovery service"],' + 
+	'["Computer lessons", "House cleaning"]] ответ должен быть ' + 
+	'[[["Computer lessons"], ["Leon", "Maria"]], [["Computer repair"], ' +
+	'["Jack", "Leon"]], [["Data recovery service"], ["Leon"]], ' +
+	'[["Handyman"], ["Jack"]], [["House cleaning"], ["Jack", "Maria"]]]', () => {
+	
+	const answer73 = [[["Computer lessons"], ["Leon", "Maria"]], 
+	[["Computer repair"], ["Jack", "Leon"]], 
+	[["Data recovery service"], ["Leon"]], [["Handyman"], ["Jack"]], 
+	[["House cleaning"], ["Jack", "Maria"]]];
+	const pros = ["Jack", "Leon", "Maria"]
+	const preferences = [["Computer repair", "Handyman", "House cleaning"],
+	["Computer lessons", "Computer repair", "Data recovery service"],
+	["Computer lessons", "House cleaning"]];
+	
+	assert.deepEqual(exc73.f(pros, preferences), answer73);
+	
+});
