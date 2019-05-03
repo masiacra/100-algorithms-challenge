@@ -1242,3 +1242,13 @@ it('Для задачи stringsConstruction при входных данных a
 	assert.equal(exc85.f('abcd', "abccba"), 0);
 		
 });
+
+
+const exc86 = require('./sumAllPrimes');
+
+it('Для задачи sumAllPrimes для числа 10 ответ 17', () => {
+	assert.equal(exc86.f(10), 17);
+});
+it('Для задачи sumAllPrimes для числа 977 ответ 73156', () => {
+	assert.equal(exc86.f(977), 73156);
+});
