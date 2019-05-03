@@ -1325,3 +1325,18 @@ it('Для задачи uniqueDigitProducts при входном массиве
 	assert.equal(exc91.f([2, 8, 121, 42, 222, 23]), 3);
 	
 });
+
+const exc92 = require('./validTime');
+
+it('Для задачи validTime при входном аргументе time = "13:58" ' +
+	'ответ должен быть true', () => {
+	assert.equal(exc92.f("13:58"), true);	
+});
+it('Для задачи validTime при входном аргументе time = "25:51" ' +
+	'ответ должен быть false', () => {
+	assert.equal(exc92.f("25:51"), false);	
+});
+it('Для задачи validTime при входном аргументе time = "02:76" ' +
+	'ответ должен быть false', () => {
+	assert.equal(exc92.f("02:76"), false);	
+});
