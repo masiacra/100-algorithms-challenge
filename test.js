@@ -1221,3 +1221,24 @@ it('Для задачи stolenLunch при входной строке "you\'ll 
 	assert.equal(exc84.f("you'll n4v4r 6u4ss 8t: cdja"), "you'll never guess it: 2390");
 		
 });
+
+const exc85 = require('./stringsConstruction');
+
+it('Для задачи stringsConstruction при входных данных a = "abc" ' + 
+	'и b = "abccba" ответ должен быть 2', () => {
+	
+	assert.equal(exc85.f('abc', "abccba"), 2);
+		
+});
+it('Для задачи stringsConstruction при входных данных a = "abc" ' + 
+	'и b = "abcba" ответ должен быть 2', () => {
+	
+	assert.equal(exc85.f('abc', "abcba"), 1);
+		
+});
+it('Для задачи stringsConstruction при входных данных a = "abcd" ' + 
+	'и b = "abccba" ответ должен быть 0', () => {
+	
+	assert.equal(exc85.f('abcd', "abccba"), 0);
+		
+});
