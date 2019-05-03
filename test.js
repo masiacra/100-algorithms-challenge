@@ -1252,3 +1252,16 @@ it('Для задачи sumAllPrimes для числа 10 ответ 17', () => 
 it('Для задачи sumAllPrimes для числа 977 ответ 73156', () => {
 	assert.equal(exc86.f(977), 73156);
 });
+
+
+const exc87 = require('./sumOddFibonacciNums');
+
+it('Для задачи sumOddFibonacciNums при входном аргументе 10 ответ 10', () => {
+	assert.equal(exc87.f(10), 10);
+});
+it('Для задачи sumOddFibonacciNums при входном аргументе 1000 ответ 1785', () => {
+	assert.equal(exc87.f(1000), 1785);
+});
+it('Для задачи sumOddFibonacciNums при входном аргументе 4000000 ответ 4613732', () => {
+	assert.equal(exc87.f(4000000), 4613732);
+});
