@@ -38,6 +38,7 @@ function f(n) {
 	const y = Math.sqrt(x**2 - n);
 	return [x, y];
 }
+//Dylan Israel вообще тупо в лоб перебирал  i**2 - j**2 === n
 
 module.exports = { f };
 
