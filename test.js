@@ -1340,3 +1340,19 @@ it('Для задачи validTime при входном аргументе time 
 	'ответ должен быть false', () => {
 	assert.equal(exc92.f("02:76"), false);	
 });
+
+
+const exc93 = require('./circleOfNumbers');
+
+it('Для задачи circleOfNumbers при входных параметрах n = 10 и ' +
+	'firstNumber = 2 ответ должен быть 7', () => {
+	
+	assert.equal(exc93.f(10, 2), 7);
+
+});
+it('Для задачи circleOfNumbers при входных параметрах n = 4 и ' +
+	'firstNumber = 2 ответ должен быть 3', () => {
+	
+	assert.equal(exc93.f(4, 2), 0);
+
+});
