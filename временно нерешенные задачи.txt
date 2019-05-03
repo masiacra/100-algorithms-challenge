@@ -1,2 +1,2 @@
-boxBlur, circleOfNumbers, crossingSum, electionWinners, fermactor,houseOfCats, launchSequenceChecker, mineSweeper,
+boxBlur, crossingSum, electionWinners, fermactor,houseOfCats, launchSequenceChecker, mineSweeper,
 minimalNumberOfCoins, newNumeralSystem
