@@ -1443,3 +1443,13 @@ it('Для задачи boxBlur при входной матрице [[7,4,0,1],
 	assert.deepEqual(exc99.f(img), blurImg);
 	
 });
+
+const exc100 = require('./electionWinners');
+//Тестировал решение на codewars: Simple Fun #41: Elections Winners
+
+it('Для задачи electionWinners при входных параметрах ' +
+	'votes = [2, 3, 5, 2] и k = 3 ответ 2', () => {
+
+	assert.equal(exc100.f([2, 3, 5, 2], 3), 2);
+
+});

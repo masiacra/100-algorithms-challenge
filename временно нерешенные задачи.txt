@@ -1,2 +1,2 @@
-boxBlur, electionWinners, houseOfCats,
+electionWinners, houseOfCats,
 minimalNumberOfCoins
