@@ -1460,3 +1460,25 @@ const exc101 = require('./houseOfCats');
 it('Для задачи houseOfCats при legs = 6 ответ [1,3]', () => {
 	assert.deepEqual(exc101.f(6), [1, 3]);
 });
+
+
+const exc102 = require('./minimalNumberOfCoins');
+
+it('Для задачи minimalNumberOfCoins при входных параметрах ' +
+	'coins = [1, 2, 10] и price = 28 ответ должен быть равен 6', () => {
+
+	assert.equal(exc102.f([1, 2, 10], 28), 6);
+	
+});
+it('Для задачи minimalNumberOfCoins при входных параметрах ' +
+	'coins = [1, 2] и price = 28 ответ должен быть равен 14', () => {
+
+	assert.equal(exc102.f([1, 2], 28), 14);
+	
+});
+it('Для задачи minimalNumberOfCoins при входных параметрах ' +
+	'coins = [1, 2, 10] и price = 27 ответ должен быть равен 6', () => {
+
+	assert.equal(exc102.f([1, 2, 10], 27), 6);
+	
+});
