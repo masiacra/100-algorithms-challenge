@@ -1411,3 +1411,15 @@ it('Для задачи mineSweeper при входной матрице ' +
          [false, false, false]]), [[1, 2, 1], [2, 1, 1], [1, 1, 1]]);
 		
 });
+
+
+const exc98 = require('./newNumeralSystem');
+
+it('Для задачи newNumeralSystem при входном аргументе number = "G"' +
+	' ответ должен быть ["A + G", "B + F", "C + E", "D + D"]', () => {
+	
+	assert.deepEqual(exc98.f('G'), ["A + G", "B + F", "C + E", "D + D"]);
+		
+});
+
+
