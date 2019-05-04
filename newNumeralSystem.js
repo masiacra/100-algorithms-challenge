@@ -57,7 +57,7 @@ function f(num) {
 	num = numSystem.get(num.toUpperCase());
 	let limit = Math.floor(num / 2);
 	const result = [];
-	for (let i = 0; i <= limit; i++) {s
+	for (let i = 0; i <= limit; i++) {
 		result.push(numSystem.get(i) + ' + ' + numSystem.get(num - i));
 	}
 	return result;

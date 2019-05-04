@@ -1,2 +1,2 @@
 boxBlur, electionWinners, houseOfCats,
-minimalNumberOfCoins, newNumeralSystem
+minimalNumberOfCoins
