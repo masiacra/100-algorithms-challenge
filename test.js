@@ -1453,3 +1453,10 @@ it('Для задачи electionWinners при входных параметра
 	assert.equal(exc100.f([2, 3, 5, 2], 3), 2);
 
 });
+
+
+const exc101 = require('./houseOfCats');
+
+it('Для задачи houseOfCats при legs = 6 ответ [1,3]', () => {
+	assert.deepEqual(exc101.f(6), [1, 3]);
+});
