@@ -1379,3 +1379,21 @@ it('Для задачи fermactor при входном числе 10873 отв�
 it('Для задачи fermactor при входном числе 89755 ответ [382, 237]', () => {
 	assert.deepEqual(exc95.f(89755), [382, 237]);
 });
+
+
+const exc96 = require('./launchSequenceChecker');
+
+it('Для задачи launchSequenceChecker при входных аргументах ' +
+	'systemNames = ["stage_1", "stage_2", "dragon", "stage_1", "stage_2",' +
+	'"dragon"] и stepNumbers = [1, 10, 11, 2, 12, 111] ответ должен быть true', () => {
+	
+	assert.equal(exc96.f(["stage_1", "stage_2", "dragon", "stage_1", "stage_2", 
+	"dragon"], [1, 10, 11, 2, 12, 111]), true);
+});
+it('Для задачи launchSequenceChecker при входных аргументах ' +
+	'systemNames = ["stage_1", "stage_1", "stage_2", "dragon"]' +
+	' и stepNumbers = [2, 1, 12, 111] ответ должен быть false', () => {
+	
+	assert.equal(exc96.f(["stage_1", "stage_1", "stage_2", "dragon"], 
+		[2, 1, 12, 111]), false);
+});
