@@ -27,6 +27,7 @@ Constraints: 2 ≤ legs ≤ 100.
 Every possible number of people that can be in the house.
 */
 
+/*
 //Тестировал задачу на codewars: Simple Fun #38: House Of Cats
 function f(legs) {
   //coding and coding..
@@ -41,6 +42,18 @@ function f(legs) {
   }
   return result;
   
+}
+*/
+
+//Dylan Israel предлагает следующее решение
+
+function f(legs) {
+	const result = [];
+	while(legs > 0) {
+		result.unshift(legs / 2);//начинаем с максимального количества людей
+		legs -= 4;//здесь мы добавляем одного кота и убираем двух людей
+	}
+	return result;
 }
 
 module.exports = { f };
