@@ -1397,3 +1397,17 @@ it('Для задачи launchSequenceChecker при входных аргуме
 	assert.equal(exc96.f(["stage_1", "stage_1", "stage_2", "dragon"], 
 		[2, 1, 12, 111]), false);
 });
+
+
+const exc97 = require('./mineSweeper');
+
+it('Для задачи mineSweeper при входной матрице ' +
+	'matrix = [[true, false, false], [false, true, false], ' +
+	'[false, false, false]] ответ должен быть ' +
+	'[[1, 2, 1], [2, 1, 1], [1, 1, 1]]', () => {
+		
+	assert.deepEqual(exc97.f([[true, false, false],
+         [false, true, false],
+         [false, false, false]]), [[1, 2, 1], [2, 1, 1], [1, 1, 1]]);
+		
+});
